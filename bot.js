@@ -113,8 +113,8 @@ if (message.content.startsWith(prefix + 'help')) { /// This is The DMS Code Send
 ={prefix}unmute @user / لفك الميوت عن الشخص 
 ={prefix}kick @user <reason> / طرد الشخص من السيرفر
 ={prefix}ban @user <reason> / حضر الشخص من السيرفر
-={prefix}mutechannel / تقفيل الشات
-={prefix}unmutechannel / فتح الشات
+={prefix}mutechanel / تقفيل الشات
+={prefix}unchanel / فتح الشات
 ={prefix}dc / مسح كل الرومات
 ={prefix}dr / <مسح كل الرانكات <لازم تكون رانك البوت فوق كل الرانكات
 ={prefix}ct <name> / انشاء شات
@@ -207,7 +207,7 @@ client.on('message',async message => {
     
 if(message.author.bot) return;
 if(!credits[message.author.id]) credits[message.author.id] = {
-    credits: 50
+    credits: 1000000
 };
 
 let userData = credits[message.author.id];
